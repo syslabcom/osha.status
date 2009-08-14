@@ -1,0 +1,15 @@
+<html metal:use-macro="context/@@standard_macros/page">
+    <body metal:fill-slot="body">
+    	<h1>Status</h1>
+		<div>An external system tests for
+		<ul>
+			<li>RSS Feeds are being displayed</li>
+			<li>Mailalerts can be sent</li>
+			<li>On can apply for Certificates of Participation</li>
+		</ul>
+		The results are then being pushed to this page
+		<div style="background-color: green" tal:condition="view/isStatusGood">All Good!</div>
+		<div style="background-color: red" tal:condition="not: view/isStatusGood">System is not in good state, Syslab has been notified.</div>
+    
+    </body>
+</html>

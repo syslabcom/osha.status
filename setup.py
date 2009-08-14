@@ -3,6 +3,7 @@ import os
 
 version = '1.0'
 
+tests_require = ['zc.testbrowser']
 setup(name='osha.status',
       version=version,
       description="Small status page",
@@ -23,6 +24,8 @@ setup(name='osha.status',
       namespace_packages=['osha'],
       include_package_data=True,
       zip_safe=False,
+      tests_require=tests_require,
+      extras_require=dict(tests=tests_require),
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
