@@ -1,10 +1,11 @@
 osha.status Changelog
 =====================
 
-osha.status 1.0.1 (unreleased)
+osha.status 1.0.1 (2009-09-15)
 ------------------------------
 
 - Typos
+- Added missing files
 
 
 osha.status 1.0.0 (2009-08-14)
