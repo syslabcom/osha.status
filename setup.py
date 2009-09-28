@@ -3,7 +3,11 @@ import os
 
 version = '1.0.2'
 
-tests_require = ['zc.testbrowser', 'osha.theme', 'slc.alertservice']
+tests_require = [
+    'zc.testbrowser', 
+    'osha.theme', 
+    'slc.alertservice', 
+    ]
 
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
