@@ -16,6 +16,10 @@ class OshaStatusLayer(SiteLayer):
         zcml.load_config('configure.zcml', osha.theme)
         import textindexng
         zcml.load_config('configure.zcml', textindexng)
+        import slc.clicksearch
+        zcml.load_config('configure.zcml', slc.clicksearch)
+        import slc.xliff
+        zcml.load_config('configure.zcml', slc.xliff)
         fiveconfigure.debug_mode = False
         ztc.installPackage('osha.status', quiet=True)
         ptc.setupPloneSite(products=[])
