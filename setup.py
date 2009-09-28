@@ -3,7 +3,7 @@ import os
 
 version = '1.0.2'
 
-tests_require = ['zc.testbrowser']
+tests_require = ['zc.testbrowser', 'osha.theme']
 
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
@@ -20,7 +20,7 @@ long_description = (
     'Detailed Documentation\n'
     '**********************\n'
     + '\n' +
-    read('osha', 'status', 'README.txt')
+    read('src', 'osha', 'status', 'README.txt')
     + '\n' +
     'Contributors\n'
     '************\n'
@@ -44,7 +44,8 @@ setup(name='osha.status',
       author_email='gerken@syslab.com',
       url='http://www.syslab.com',
       license='GPL',
-      packages=find_packages(exclude=['ez_setup']),
+      packages=['osha', 'osha.status'],
+      package_dir = {'' : 'src'},
       namespace_packages=['osha'],
       include_package_data=True,
       zip_safe=False,
