@@ -1,7 +1,7 @@
 osha.status Changelog
 =====================
 
-1.0.4 (unreleased)
+1.0.4 (2009-10-15)
 ------------------
 
 - Added missing osha.theme profile to test setup (gerken)
