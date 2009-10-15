@@ -22,7 +22,7 @@ class OshaStatusLayer(SiteLayer):
         zcml.load_config('configure.zcml', slc.xliff)
         fiveconfigure.debug_mode = False
         ztc.installPackage('osha.status', quiet=True)
-        ptc.setupPloneSite(products=[])
+        ptc.setupPloneSite(products=[], extension_profiles=['osha.theme:default'])
         SiteLayer.setUp()
 
 
