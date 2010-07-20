@@ -57,6 +57,8 @@ setup(name='osha.status',
       extras_require=dict(tests=tests_require),
       install_requires=[
           'setuptools',
+          'Products.ATCountryWidget',
+          'pytz'
           # -*- Extra requirements: -*-
       ],
       entry_points="""
